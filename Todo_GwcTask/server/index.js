@@ -113,7 +113,7 @@ socketIO.on("connection", (socket) => {
     const itemMoved = {
       ...tasks[source.droppableId].items[source.index],
     };
-    // console.log("ItemMoved>>> ", itemMoved);
+    
     tasks[source.droppableId].items.splice(source.index, 1);
     tasks[destination.droppableId].items.splice(
       destination.index,
